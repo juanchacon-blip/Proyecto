@@ -40,6 +40,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
         jMenuBar2 = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
@@ -81,9 +82,6 @@ public class GUIPrincipal extends javax.swing.JFrame {
             .addGap(0, 100, Short.MAX_VALUE)
         );
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Principal");
-
         jPanel3.setAutoscrolls(true);
         jPanel3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
@@ -98,9 +96,29 @@ public class GUIPrincipal extends javax.swing.JFrame {
             .addGap(0, 151, Short.MAX_VALUE)
         );
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Principal");
+
+        jPanel4.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 160, Short.MAX_VALUE)
+        );
+
+        menuArchivo.setBackground(new java.awt.Color(255, 204, 255));
+        menuArchivo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         menuArchivo.setForeground(new java.awt.Color(51, 0, 51));
         menuArchivo.setText("Archivo");
+        menuArchivo.setToolTipText("");
 
+        jRadioButtonMenuItem1.setBackground(new java.awt.Color(255, 204, 255));
         jRadioButtonMenuItem1.setForeground(new java.awt.Color(51, 0, 51));
         jRadioButtonMenuItem1.setSelected(true);
         jRadioButtonMenuItem1.setText("Salir");
@@ -111,8 +129,10 @@ public class GUIPrincipal extends javax.swing.JFrame {
         });
         menuArchivo.add(jRadioButtonMenuItem1);
 
+        jMenu2.setBackground(new java.awt.Color(255, 204, 255));
         jMenu2.setText("Modificar/Buscar");
 
+        jMenuItem3.setBackground(new java.awt.Color(255, 204, 255));
         jMenuItem3.setText("Registros");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,8 +143,10 @@ public class GUIPrincipal extends javax.swing.JFrame {
 
         menuArchivo.add(jMenu2);
 
+        jMenu1.setBackground(new java.awt.Color(255, 204, 255));
         jMenu1.setText("Nuevo");
 
+        barraAdicionar.setBackground(new java.awt.Color(255, 204, 255));
         barraAdicionar.setForeground(new java.awt.Color(51, 0, 51));
         barraAdicionar.setSelected(true);
         barraAdicionar.setText("Registro");
@@ -139,9 +161,12 @@ public class GUIPrincipal extends javax.swing.JFrame {
 
         jMenuBar2.add(menuArchivo);
 
+        menuMascota.setBackground(new java.awt.Color(255, 204, 255));
+        menuMascota.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         menuMascota.setForeground(new java.awt.Color(51, 0, 51));
         menuMascota.setText("Mascotas");
 
+        jMenuItem1.setBackground(new java.awt.Color(255, 204, 255));
         jMenuItem1.setText("Listar");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,6 +175,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
         });
         menuMascota.add(jMenuItem1);
 
+        jMenuItem2.setBackground(new java.awt.Color(255, 204, 255));
         jMenuItem2.setText("camtidad de registros");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,9 +186,12 @@ public class GUIPrincipal extends javax.swing.JFrame {
 
         jMenuBar2.add(menuMascota);
 
+        menuAyuda.setBackground(new java.awt.Color(255, 204, 255));
+        menuAyuda.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         menuAyuda.setForeground(new java.awt.Color(51, 0, 51));
         menuAyuda.setText("Ayuda");
 
+        jRadioButtonMenuItem2.setBackground(new java.awt.Color(255, 204, 255));
         jRadioButtonMenuItem2.setForeground(new java.awt.Color(51, 0, 51));
         jRadioButtonMenuItem2.setSelected(true);
         jRadioButtonMenuItem2.setText("Acerca de ....");
@@ -181,13 +210,11 @@ public class GUIPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 7, Short.MAX_VALUE))
+            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -286,6 +313,7 @@ public class GUIPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JScrollPane jScrollPane1;
