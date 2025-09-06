@@ -20,7 +20,7 @@ public class Mascota {
     
     //GETERS Y SETTERS
 
-    public int getId() {
+
         return id;
     }
 
@@ -61,3 +61,4 @@ public class Mascota {
     }
     
 }
+
