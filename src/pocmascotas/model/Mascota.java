@@ -3,7 +3,7 @@ package pocmascotas.model;
 
 public class Mascota {
     
-    private int id;
+    private int documentoMascota;
     private String estado, nombre;
     private boolean estadoDeVenta;
     private double precio;
@@ -61,4 +61,5 @@ public class Mascota {
     }
     
 }
+
 
